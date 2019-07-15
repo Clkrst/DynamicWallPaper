@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas</title>
+    <!-- Canvas, おれはJQueryをやめるぞ！ -->
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #display {
+            margin: auto;
+        }
+		.back{
+			position:absolute;
+			height:100%;
+			width:100%;
+			top:0;
+			left:0;
+			right:0;
+		}
+		#back_div{
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+		}
+		img{
+			width:100%;
+			//height:100%;
+		}
+		input{
+			display:none;
+		}
+    </style>
+</head>
+
+<body id="body_test">
+	<div id="back_div"><img id="back_img" src="img/test1.jpg"></div>
+	<div id="particles-js" class="back"></div>
+    <canvas id="cvs" class="hidden" width="1980" height="1080"></canvas>
+    <canvas id="screenImage" class="hidden" width="234" height="357"></canvas>
+    <canvas id="rili" class="hidden" width="600" height="600"></canvas>
+    <canvas id="display"></canvas>
+</body>
+
+	<script src="js/main.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/particle_set.js"></script>
+	<script src="js/anime.min.js"></script>
+	
+</html>
