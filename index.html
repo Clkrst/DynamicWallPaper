@@ -38,6 +38,18 @@
 			right:0;
 			bottom:0;
 		}
+		#cvs{
+			/*background: #FFFFFF5b;*/
+			width: 2000px;
+			height: 1200px;
+		}
+		#canv{
+			position:absolute;
+			top:0px;
+			left:0px;
+			width:auto;
+			height:auto;
+		}
 		img{
 			width:100%;
 			//height:100%;
@@ -45,16 +57,46 @@
 		input{
 			display:none;
 		}
+		#lyrics{
+			/*background: #36F6045b;*/
+			position: absolute;
+			/*word-wrap: break-word;*/
+			writing-mode: vertical-lr;
+			left: 1700px;
+			top: 60px;
+			width: auto;
+			height: auto;
+			text-align: center;
+			font-size: 45px;
+			padding: 0px;
+			margin: 0px;
+			font-family: "Comic Sans MS";
+			color: #04FDF95F;
+		}
+		#FormattedTime{
+			position: absolute;
+			left: 839px;
+			top: 485px;
+			width: auto;
+			height: auto;
+			margin: 0px;
+			padding: 0px;
+			font-family: "Arial";
+			font-size: 60px;
+			color: #00FF4960;
+		}
     </style>
 </head>
 
 <body id="body_test">
 	<div id="back_div"><img id="back_img" src="img/test1.jpg"></div>
 	<div id="particles-js" class="back"></div>
-    <canvas id="cvs" class="hidden" width="1980" height="1080"></canvas>
-    <canvas id="screenImage" class="hidden" width="234" height="357"></canvas>
-    <canvas id="rili" class="hidden" width="600" height="600"></canvas>
-    <canvas id="display"></canvas>
+    <div id="canv"><canvas id="cvs" width="4000" height="2400"></canvas></div>
+	<div id="lyrics"><p id="raw_lyric"></p><p id="chinese_lyric"></p></div>
+	<div id="FormattedTime"><p></p></div>
+   <!--  <canvas id="screenImage" class="hidden" width="234" height="357"></canvas>
+    <canvas id="rili" class="hidden" width="600" height="600"></canvas> -->
+    <!-- <canvas id="display"></canvas> -->
 </body>
 
 	<script src="js/main.js"></script>
